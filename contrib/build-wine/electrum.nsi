@@ -133,10 +133,10 @@ Section
 
 
   ;Links bitcoin: URI's to Electrum
-  WriteRegStr HKCU "Software\Classes\litecoin" "" "URL:litecoin Protocol"
-  WriteRegStr HKCU "Software\Classes\litecoin" "URL Protocol" ""
-  WriteRegStr HKCU "Software\Classes\litecoin" "DefaultIcon" "$\"$INSTDIR\electrum.ico, 0$\""
-  WriteRegStr HKCU "Software\Classes\litecoin\shell\open\command" "" "$\"$INSTDIR\electrum-ltc-${PRODUCT_VERSION}.exe$\" $\"%1$\""
+  WriteRegStr HKCU "Software\Classes\garlicium" "" "URL:garlicium Protocol"
+  WriteRegStr HKCU "Software\Classes\garlicium" "URL Protocol" ""
+  WriteRegStr HKCU "Software\Classes\garlicium" "DefaultIcon" "$\"$INSTDIR\electrum.ico, 0$\""
+  WriteRegStr HKCU "Software\Classes\garlicium\shell\open\command" "" "$\"$INSTDIR\electrum-ltc-${PRODUCT_VERSION}.exe$\" $\"%1$\""
 
   ;Adds an uninstaller possibilty to Windows Uninstall or change a program section
   WriteRegStr HKCU "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
@@ -167,7 +167,7 @@ Section "Uninstall"
   Delete "$SMPROGRAMS\${PRODUCT_NAME}\*.*"
   RMDir  "$SMPROGRAMS\${PRODUCT_NAME}"
   
-  DeleteRegKey HKCU "Software\Classes\litecoin"
+  DeleteRegKey HKCU "Software\Classes\garlicium"
   DeleteRegKey HKCU "Software\${PRODUCT_NAME}"
   DeleteRegKey HKCU "${PRODUCT_UNINST_KEY}"
 SectionEnd

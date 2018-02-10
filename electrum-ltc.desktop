@@ -2,16 +2,16 @@
 # sudo desktop-file-install electrum.desktop
 
 [Desktop Entry]
-Comment=Lightweight Litecoin Client
+Comment=Lightweight Garlicium Client
 Exec=electrum-ltc %u
-GenericName[en_US]=Litecoin Wallet
-GenericName=Litecoin Wallet
+GenericName[en_US]=Garlicium Wallet
+GenericName=Garlicium Wallet
 Icon=electrum-ltc
-Name[en_US]=Electrum Litecoin Wallet
-Name=Electrum Litecoin Wallet
+Name[en_US]=Electrum Garlicium Wallet
+Name=Electrum Garlicium Wallet
 Categories=Finance;Network;
 StartupNotify=false
 Terminal=false
 Type=Application
-MimeType=x-scheme-handler/litecoin;
+MimeType=x-scheme-handler/garlicium;
 
